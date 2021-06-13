@@ -62,7 +62,7 @@ pipeline {
 			steps {
 				dir('functional-test'){
 				git credentialsId: 'GitHubLogin', url: 'https://github.com/jcsaGitHub/tasks-functionaltest'
-				bat 'mvn test'
+				bat 'mvn clean test'
 				}
 			}
 		}
